@@ -8,6 +8,46 @@ package pkg_modelo;
  *
  * @author CC_Laboratorio
  */
-public class Entrenador {
-    
+public class Entrenador extends Persona {
+    private String especialidad;
+
+    // Constructor vacío
+    public Entrenador() {
+        super();
+    }
+
+    // Constructor completo
+    public Entrenador(
+            int id,
+            String nombre,
+            String especialidad,
+            String telefono) {
+
+        super(id, nombre, telefono);
+
+        this.especialidad = especialidad;
+    }
+
+    @Override
+    public String mostrarInformacion() {
+        return getNombre()
+                + " - "
+                + especialidad
+                + " - Tel: "
+                + getTelefono();
+    }
+
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
+    }
+
+    @Override
+    public String toString() {
+        return getNombre();
+    }
 }
+
