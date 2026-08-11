@@ -8,6 +8,3 @@ package pkg_modelo;
  *
  * @author CC_Laboratorio
  */
-public class ClienteDAO {
-    
-}
