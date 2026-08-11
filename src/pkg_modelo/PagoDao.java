@@ -8,7 +8,6 @@ package pkg_modelo;
  *
  * @author CC_Laboratorio
  */
-public class EntrenadorDAO {
-
-
+public class PagoDao {
+    
 }
