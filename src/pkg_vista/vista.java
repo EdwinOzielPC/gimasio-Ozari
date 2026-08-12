@@ -26,17 +26,142 @@ public class vista extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblTitulo = new javax.swing.JLabel();
+        lblIdCliente = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        lblApellido = new javax.swing.JLabel();
+        lblTelefono = new javax.swing.JLabel();
+        lblFechaIngreso = new javax.swing.JLabel();
+        lblIdPlan = new javax.swing.JLabel();
+        lblIdEntrenador = new javax.swing.JLabel();
+        btnLimpiar = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btnActualizar = new javax.swing.JButton();
+        btnRegistrar = new javax.swing.JButton();
+        txtIdCliente = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        txtApellido = new javax.swing.JTextField();
+        txtTelefono = new javax.swing.JTextField();
+        txtFechaIngreso = new javax.swing.JTextField();
+        txtIdPlan = new javax.swing.JTextField();
+        txtIdEntrenador = new javax.swing.JTextField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblTitulo.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(0, 0, 204));
+        lblTitulo.setText("GIMNASIO OZARI");
+
+        lblIdCliente.setText("IdCliente:");
+
+        lblNombre.setText("Nombre:");
+
+        lblApellido.setText("Apellido:");
+
+        lblTelefono.setText("Telefono:");
+
+        lblFechaIngreso.setText("FechaIngreso:");
+
+        lblIdPlan.setText("IdPlan:");
+
+        lblIdEntrenador.setText("IdEntrenador:");
+
+        btnLimpiar.setText("LIMPIAR");
+
+        btnEliminar.setText("ELIMINAR");
+
+        btnActualizar.setText("ACTUALIZAR");
+
+        btnRegistrar.setText("REGISTRAR");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(148, 148, 148)
+                        .addComponent(lblTitulo))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblIdPlan)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtIdPlan))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblNombre)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtNombre))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblApellido)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtApellido))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblIdEntrenador)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtIdEntrenador))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblTelefono)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtTelefono))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblFechaIngreso)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtFechaIngreso))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblIdCliente)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtIdCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(27, 27, 27)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnActualizar)
+                            .addComponent(btnEliminar))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnLimpiar)
+                            .addComponent(btnRegistrar))))
+                .addGap(56, 56, 56))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(lblTitulo)
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblIdCliente)
+                    .addComponent(txtIdCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNombre)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnActualizar)
+                    .addComponent(btnRegistrar))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblApellido)
+                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTelefono)
+                    .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblFechaIngreso)
+                    .addComponent(txtFechaIngreso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEliminar)
+                    .addComponent(btnLimpiar))
+                .addGap(11, 11, 11)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblIdPlan)
+                    .addComponent(txtIdPlan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblIdEntrenador)
+                    .addComponent(txtIdEntrenador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(388, Short.MAX_VALUE))
         );
 
         pack();
@@ -78,5 +203,24 @@ public class vista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnActualizar;
+    private javax.swing.JButton btnEliminar;
+    private javax.swing.JButton btnLimpiar;
+    private javax.swing.JButton btnRegistrar;
+    private javax.swing.JLabel lblApellido;
+    private javax.swing.JLabel lblFechaIngreso;
+    private javax.swing.JLabel lblIdCliente;
+    private javax.swing.JLabel lblIdEntrenador;
+    private javax.swing.JLabel lblIdPlan;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblTelefono;
+    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JTextField txtApellido;
+    private javax.swing.JTextField txtFechaIngreso;
+    private javax.swing.JTextField txtIdCliente;
+    private javax.swing.JTextField txtIdEntrenador;
+    private javax.swing.JTextField txtIdPlan;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }
