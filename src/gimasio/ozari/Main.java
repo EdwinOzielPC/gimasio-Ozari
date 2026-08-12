@@ -4,6 +4,8 @@
  */
 package gimasio.ozari;
 
+import pkg_vista.vista;
+
 /**
  *
  * @author CC_Laboratorio
@@ -15,6 +17,14 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+     java.awt.EventQueue.invokeLater(() -> {
+
+            vista ventana = new vista();
+
+            ventana.setTitle("Sistema de Gestión de Gimnasio");
+            ventana.setLocationRelativeTo(null);
+            ventana.setVisible(true);
+        });
     }
     
 }
