@@ -4,27 +4,39 @@
  */
 package gimasio.ozari;
 
-import pkg_vista.vista;
+import pkg_controlador.gimasioControl;
+import pkg_vista.vistaCliente;
+import pkg_vista.vistaEntrenador;
+import pkg_vista.vistaPago;
 
-/**
- *
- * @author CC_Laboratorio
- */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-     java.awt.EventQueue.invokeLater(() -> {
 
-            vista ventana = new vista();
+        java.awt.EventQueue.invokeLater(() -> {
 
-            ventana.setTitle("Sistema de Gestión de Gimnasio");
-            ventana.setLocationRelativeTo(null);
-            ventana.setVisible(true);
+            vistaCliente cliente = new vistaCliente();
+
+            vistaEntrenador entrenador =
+                    new vistaEntrenador();
+
+            vistaPago pago =
+                    new vistaPago();
+
+            gimasioControl controlador =
+                    new gimasioControl(
+                            cliente,
+                            entrenador,
+                            pago
+                    );
+
+            cliente.setLocation(50, 100);
+            entrenador.setLocation(500, 100);
+            pago.setLocation(950, 100);
+
+            cliente.setVisible(true);
+            entrenador.setVisible(true);
+            pago.setVisible(true);
         });
     }
-    
 }
