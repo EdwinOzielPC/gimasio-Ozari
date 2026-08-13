@@ -49,5 +49,9 @@ public class Entrenador extends Persona {
     public String toString() {
         return getNombre();
     }
+
+    public Object getIdEntrenador() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 
